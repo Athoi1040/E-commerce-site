@@ -1,0 +1,100 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #6a11cb, #0c3885d2);
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #c4b4ce;
+}
+
+.login-btn {
+  padding: 0.5rem 1.2rem;
+   border: 2px solid #f8f7f9;
+  border-radius: 6px;
+  background-color: #f8f7f9;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+}
+
+.login-btn:hover {
+  background-color: #fdfcf8;
+  color: #333;
+}
+
+.register-btn {
+  padding: 0.5rem 1.2rem;
+  border: 2px solid #f8f7f9;
+  border-radius: 6px;
+  background-color: #f8f7f9;
+  color: #0d0d0e;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+}
+
+.register-btn:hover {
+  background-color: #f8f7f9;
+  color: #333;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.toast-notification {
+  position: fixed;
+  top: 90px;
+  right: 20px;
+  background-color: #28a745;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  font-weight: 600;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

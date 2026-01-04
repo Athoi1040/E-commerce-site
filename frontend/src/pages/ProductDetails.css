@@ -1,0 +1,131 @@
+.product-details-container {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-btn {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  background: none;
+  border: none;
+  color: #667eea;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto 20px auto;
+  text-align: left;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+.product-details-wrapper {
+  display: flex;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 1000px;
+  width: 100%;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .product-details-wrapper {
+    flex-direction: row;
+  }
+}
+
+.product-details-image {
+  flex: 1;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-details-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+.product-details-info {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-details-info h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 1.8rem;
+  color: #667eea;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.product-description {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.product-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.product-actions button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
+.add-to-cart-btn-details {
+  background-color: #fff;
+  border: 2px solid #667eea;
+  color: #667eea;
+}
+
+.add-to-cart-btn-details:hover {
+  background-color: #f0f4ff;
+}
+
+.add-to-cart-btn-details.added {
+  background-color: #b4d6bc;
+  border-color: #a1c6aa;
+  color: white;
+}
+
+.buy-now-btn {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  border: none;
+  color: white;
+}
+
+.buy-now-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
